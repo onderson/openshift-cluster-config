@@ -10,7 +10,7 @@ spec:
   source:
     path: components/rbac
     repoURL: https://github.com/onderson/openshift-cluster-config
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
