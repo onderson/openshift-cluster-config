@@ -15,3 +15,9 @@ spec:
     automated:
       prune: true
       selfHeal: true
+  ignoreDifferences:
+     - group: route.openshift.io/v1
+       name: pricelist-route
+       kind: Route
+       jsonPointers:
+         - /spec/host
