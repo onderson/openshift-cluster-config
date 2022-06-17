@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: sampleapp
+spec:
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  destinations:
+  - namespace: '*'
+    server: '*'
+  sourceRepos:
+  - '*'
+  roles:
+  - description: Developers get view and sync
+    name: developer
+    policies:
+    - p, role:developer, applications, get, sampleapp/*, allow
+    - p, role:developer, applications, sync, sampleapp/*, allow
+    - p, role:developer, projects, get, sampleapp, allow
