@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: clusters/sandbox/argocd/bootstrap
+    path: clusters/sandbox
     repoURL: https://github.com/onderson/openshift-cluster-config
     targetRevision: main
   syncPolicy:
