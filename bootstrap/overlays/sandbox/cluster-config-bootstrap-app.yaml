@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: openshift-cluster-config-bootstrap
-  namespace: argocd
+  namespace: openshift-gitops
   labels:
     gitops.ownedBy: openshift-cluster-config
 spec:

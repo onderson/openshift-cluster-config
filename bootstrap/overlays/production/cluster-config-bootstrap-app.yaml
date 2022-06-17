@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: openshift-cluster-config-bootstrap
-  namespace: argocd
+  namespace: openshift-gitops
   labels:
     gitops.ownedBy: openshift-cluster-config
 spec:
@@ -11,8 +11,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: clusters/production/argocd/bootstrap
-    repoURL: <TO_REPLACE> #with something ending like openshift-cluster-config
+    path: clusters/production
+    repoURL: https://github.com/onderson/openshift-cluster-config
     targetRevision: main
   syncPolicy:
     automated:

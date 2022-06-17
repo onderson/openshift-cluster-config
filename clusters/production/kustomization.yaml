@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
 # externalize operator installation to take that into account
 # seperately
-- ../../../../components/gitops-operator/overlays/production
-- ../../../../components/argocd-instance/overlays/production
+#- ../../../../components/gitops-operator/overlays/production
+#- ../../../../components/argocd-instance/overlays/production
 - ../../../../components/argocd/projects
 - ../../../../components/argocd/apps
