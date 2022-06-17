@@ -2,6 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
+# externalize operator installation to take that into account
+# seperately
 - ../../../../components/gitops-operator/overlays/production
 - ../../../../components/argocd-instance/overlays/production
 - ../../../../components/argocd/projects
