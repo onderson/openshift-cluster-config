@@ -8,7 +8,7 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: components/auth-htpass
+    path: components/auth/htpass
     repoURL: https://github.com/onderson/openshift-cluster-config
     targetRevision: main
   syncPolicy:
