@@ -5,5 +5,7 @@ bases:
 - ../../base
 
 resources:
-- ../../../components/gitops-operator/overlays/sandbox
+# there is no way yet to wait for operatior installation to be completed
+# which would complete bootstrapping Argo application for the cluster
+#- ../../../components/gitops-operator/overlays/sandbox
 - cluster-config-bootstrap-app.yaml
