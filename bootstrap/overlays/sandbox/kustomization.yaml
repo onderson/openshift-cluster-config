@@ -5,4 +5,5 @@ bases:
 - ../../base
 
 resources:
+- ../../../components/gitops-operator/overlays/sandbox
 - cluster-config-bootstrap-app.yaml
